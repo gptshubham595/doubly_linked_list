@@ -6,12 +6,16 @@ This assignment is a C programming project where you write a program that simula
 the virtual memory in a running process. In practice, you will create a dynamic doubly linked list for storing
 integers. The integers will be stored and removed into two stacks, which will grow and shrink during the
 program execution. In particular,
- the first stack will contain odd positive integers, e.g. 1, 3, or 9, start at the head of the list, and grow
+
+- the first stack will contain odd positive integers, e.g. 1, 3, or 9, start at the head of the list, and grow
 towards the tail,
- the second stack will contain even nonnegative integers, e.g. 0, 2, or 8, start at the tail of the list, and
+
+- the second stack will contain even nonnegative integers, e.g. 0, 2, or 8, start at the tail of the list, and
 grow towards the head,
- between the two lists, the program will maintain a free gap, i.e. a set of free nodes, simulating the free
+
+- between the two lists, the program will maintain a free gap, i.e. a set of free nodes, simulating the free
 memory gap between the heap and the stack in a process virtual address space.
+
 Integers will be capped at some given value, MAX, fixed at the beginning of the program and the user will
 control the number of integers pushed to and pulled from the list from the terminal. Here is an illustrative
 diagram of the list that your program is supposed to build:
